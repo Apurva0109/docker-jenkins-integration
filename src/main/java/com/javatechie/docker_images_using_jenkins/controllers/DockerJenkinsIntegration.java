@@ -10,4 +10,9 @@ public class DockerJenkinsIntegration {
     public String dockerJenkinsIntegration() {
         return "Hi from Docker Jenkins Integration!";
     }
+
+    @GetMapping("/newBuild")
+    public String newBuild() {
+        return "Check if new build is created as soon as push changes to git";
+    }
 }
